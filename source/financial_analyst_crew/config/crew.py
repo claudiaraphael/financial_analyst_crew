@@ -14,7 +14,7 @@ class FinancialAnalystCrew():
     def __init__(self) -> None:
         self.groq_llm = ChatGroq(temperature=0, model_name = "mixtral-8x7b-32768")
 
-    @agent
+    @agent 
     def financial_researcher(self) -> Agent:
         return Agent(
             config = self.agents_config['financial_researcher'],
@@ -34,3 +34,12 @@ class FinancialAnalystCrew():
             agent = self.financial_researcher()
 
         )
+    @crew
+        def crew(self) -> Crew:
+            """Creates the FinancialAnalystCrew crew"""
+            return Crew(
+                agents = self.agents,
+                tasks = self.tasks,
+                process = Process.sequential,
+                verbose = 2
+            )
