@@ -1,7 +1,7 @@
 # Prompt helper:
 # What metrics should one include in a financial analysis?
 
-research_company_task:
+research_company:
   description: >
     Use a search engine tool to look up this {company}'s stock information: {company_name}.
     Conduct thorough research on the specified company's stock performance.  
@@ -30,7 +30,7 @@ research_company_task:
     - **Risk Factors & Market Conditions:**  
       - Industry trends, economic indicators, company-specific risks  
       
-analyze_company_task:
+analyze_company:
   description: >
     Take {company_name}'s financial information, analyse it, and provide a financial analysis, including
     Conduct an in-depth financial analysis of the researched company’s stock performance.  
