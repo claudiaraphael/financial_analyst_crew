@@ -35,11 +35,11 @@ class FinancialAnalystCrew():
 
         )
     @crew
-        def crew(self) -> Crew:
-            """Creates the FinancialAnalystCrew crew"""
-            return Crew(
-                agents = self.agents,
-                tasks = self.tasks,
-                process = Process.sequential,
-                verbose = 2
+    def crew(self) -> Crew:
+        """Creates the FinancialAnalystCrew crew"""
+        return Crew(
+            agents = self.agents,
+            tasks = self.tasks,
+            process = Process.sequential,
+            verbose = 2
             )
