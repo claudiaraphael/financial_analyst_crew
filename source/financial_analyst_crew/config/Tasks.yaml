@@ -1,7 +1,7 @@
 # Prompt helper:
 # What metrics should one include in a financial analysis?
 
-research_company:
+financial_research:
   description: >
     Use a search engine tool to look up this {company}'s stock information: {company_name}.
     Conduct thorough research on the specified company's stock performance.  
