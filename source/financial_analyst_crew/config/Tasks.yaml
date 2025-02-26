@@ -1,0 +1,53 @@
+# Prompt helper:
+# What metrics should one include in a financial analysis?
+
+research_company_task:
+  description: >
+    Use a search engine tool to look up this {company}'s stock information: {company_name}.
+    Conduct thorough research on the specified company's stock performance.  
+    Gather and summarize key financial data, recent news, and market trends  
+    to prepare for an in-depth financial analysis.  
+
+    The research should focus on:  
+    - Stock performance and market data  
+    - Valuation metrics to assess stock price fairness  
+    - Profitability indicators to evaluate earnings efficiency  
+    - Financial health metrics (liquidity, debt, stability)  
+    - Growth trends and risk factors affecting the company  
+
+  expected_output: >
+    A structured financial report including:  
+    - **Stock Performance & Market Data:**  
+      - Current stock price, 52-week high/low, trading volume, market capitalization  
+    - **Valuation Metrics:**  
+      - P/E Ratio, P/B Ratio, Enterprise Value, EV/EBITDA  
+    - **Profitability Metrics:**  
+      - EPS, Gross Margin, Operating Margin, Net Profit Margin  
+    - **Financial Health & Stability:**  
+      - Debt-to-Equity Ratio, Current Ratio, Quick Ratio, Interest Coverage Ratio  
+    - **Growth & Performance Trends:**  
+      - Revenue Growth, Earnings Growth, ROE, ROA  
+    - **Risk Factors & Market Conditions:**  
+      - Industry trends, economic indicators, company-specific risks  
+      
+analyze_company_task:
+  description: >
+    Take {company_name}'s financial information, analyse it, and provide a financial analysis, including
+    Conduct an in-depth financial analysis of the researched company’s stock performance.  
+    Use the collected data to assess valuation, profitability, stability, growth potential,  
+    and risks. Provide an investment recommendation based on the findings.  
+
+    The analysis should:  
+    - Evaluate stock valuation and compare it to industry peers  
+    - Assess profitability and efficiency of the company  
+    - Examine financial stability, liquidity, and debt levels  
+    - Identify growth potential based on revenue and earnings trends  
+    - Highlight any risks or market conditions affecting the company  
+
+  expected_output: >
+    A Markdown formatted analysis including all the necessary for a deep thorough financial analysis.
+    A structured financial analysis report including: Profitability rtios Liquidity ratios, Solvency ratios, growth metrics, valuation metrics.
+    - **Summary of Key Financial Indicators** (Valuation, Profitability, Stability)  
+    - **Strengths and Weaknesses** of the company’s financial position  
+    - **Market Trends & Risk Assessment** affecting stock performance  
+    - **Investment Recommendation:** Buy, Hold, or Sell with justification  
